@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Preview</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Your Resume</h1>
+        <div class="resume-preview">
+            <div class="photo-container">
+                <img id="resumePhoto" src="" alt="Your Photo">
+            </div>
+            <h2 id="resumeName"></h2>
+            <p id="resumeEmail"></p>
+            <p id="resumePhone"></p>
+
+            <h3>Summary</h3>
+            <p id="resumeSummary"></p>
+
+            <h3>Education</h3>
+            <p id="resumeTenth"></p>
+            <p id="resumeTwelfth"></p>
+            <p id="resumeHigherEducation"></p>
+
+            <h3>Experience</h3>
+            <p id="resumeExperience"></p>
+
+            <h3>Projects</h3>
+            <p id="resumeProjects"></p>
+
+            <h3>Skills</h3>
+            <ul id="resumeSkills"></ul>
+        </div>
+        <button id="downloadResume">Download Resume</button>
+    </div>
+    <script src="resume.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+</body>
+</html>

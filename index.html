@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Advanced Resume Builder</h1>
+        <form id="resumeForm" action="resume.html" method="GET" enctype="multipart/form-data">
+            <!-- Basic Information -->
+            <section>
+                <h2>Basic Information</h2>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
+                
+                <label for="summary">Summary:</label>
+                <textarea id="summary" name="summary" placeholder="Write a brief summary about yourself"></textarea>
+            </section>
+
+            <!-- Education -->
+            <section>
+                <h2>Education</h2>
+                <label for="tenth">10th Grade (School, Percentage):</label>
+                <input type="text" id="tenth" name="tenth" placeholder="e.g., ABC School, 88%">
+                
+                <label for="twelfth">12th Grade (School, Percentage):</label>
+                <input type="text" id="twelfth" name="twelfth" placeholder="e.g., XYZ School, 90%">
+                
+                <label for="higherEducation">Higher Education:</label>
+                <input type="text" id="higherEducation" name="higherEducation" placeholder="e.g., BCA, ABC University, 9.0 CGPA">
+            </section>
+
+            <!-- Experience -->
+            <section>
+                <h2>Experience</h2>
+                <label for="experience">Job Title, Company, Duration:</label>
+                <textarea id="experience" name="experience" placeholder="e.g., Software Intern, XYZ Pvt Ltd, Jan 2023 - Dec 2023"></textarea>
+            </section>
+
+            <!-- Projects -->
+            <section>
+                <h2>Projects</h2>
+                <label for="projects">Project Title & Description:</label>
+                <textarea id="projects" name="projects" placeholder="e.g., Online Resume Builder - Created a web-based resume builder using HTML, CSS, and JS"></textarea>
+            </section>
+
+            <!-- Skills -->
+            <section>
+                <h2>Skills</h2>
+                <label for="skills">Skills (comma-separated):</label>
+                <input type="text" id="skills" name="skills" placeholder="e.g., HTML, CSS, JavaScript">
+            </section>
+
+            <!-- Photo -->
+            <section>
+                <h2>Photo</h2>
+                <label for="photo">Upload Your Photo:</label>
+                <input type="file" id="photo" name="photo" accept="image/*" required>
+            </section>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+    </div>
+</body>
+</html>
